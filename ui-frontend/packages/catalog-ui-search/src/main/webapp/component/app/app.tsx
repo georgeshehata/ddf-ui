@@ -529,8 +529,9 @@ const App = ({
                             className={`group-hover:opacity-100 opacity-25 relative py-3 hover:opacity-100 focus-visible:opacity-100 transition-opacity`}
                             Icon={PersonIcon}
                             iconPosition="start"
-                            expandedText="user-profile"
+                            expandedText={userInstance.getUserName()}
                             unexpandedText={userInstance.getUserName()}
+                            dataId="user-profile"
                             expanded={navOpen}
                             focusVisibleClassName="focus-visible"
                           />
